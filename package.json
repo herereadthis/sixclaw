@@ -1,0 +1,33 @@
+{
+  "name": "static-loader",
+  "version": "0.1.6",
+  "author": {
+    "name": "Jimmy Ha"
+  },
+  "description": "static loader module for webpack",
+  "files": [
+    "index.js"
+  ],
+  "dependencies": {
+    "loader-utils": "^0.2.9"
+  },
+  "keywords": [
+    "webpack",
+    "file-loader",
+    "url-loader",
+    "production",
+    "npm"
+  ],
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/herereadthis/sixclaw.git"
+  },
+  "bugs": {
+    "url": "https://github.com/herereadthis/sixclaw/issues"
+  },
+  "homepage": "https://github.com/herereadthis/sixclaw",
+  "main": "index.js",
+  "directories": {},
+  "license": "MIT"
+}
