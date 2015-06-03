@@ -1,4 +1,5 @@
-#SixClaw
+SixClaw
+=======
 
 [![Dependency Status](https://david-dm.org/herereadthis/sixclaw.svg)](https://david-dm.org/herereadthis/sixclaw)
 [![npm version](https://badge.fury.io/js/static-loader.svg)](https://www.npmjs.com/package/static-loader)
