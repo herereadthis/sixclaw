@@ -19,9 +19,11 @@ This static loader is more relevant versus ```file-loader``` or ```url-loader```
 How-to:
 
 ```javascript
-require("static?!path/realFilename.ext?output=path/newFilename.ext");
+require("static!path/realFilename.ext?output=path/newFilename.ext");
 // example
-require("static?!./favicon.ico?output=favicon.ico");
+require("static!./favicon.ico?output=favicon.ico");
+// or
+require("static?output=robots.txt!./robots.txt");
 ```
 
 You need to add ```output``` as your resource query name, the value for ```output``` is what webpack will copy to production

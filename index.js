@@ -1,17 +1,13 @@
 var loaderUtils = require("loader-utils");
 
+function getOutput(q){
+    return loaderUtils.parseQuery(q).output;
+}
+
 module.exports = function(content) {
     if (!this.emitFile) throw new Error("emitFile is required from module system");
-
-    var url, query, root;
-
-    url = this.resourcePath;
-    query = loaderUtils.parseQuery(this.resourceQuery)
-    root = this.options.context;
-
-    url = url.substr(url.indexOf(root) + root.length);
-
-    if (JSON.stringify(this.query) !== '"?"') {
+    var output = getOutput(this.resourceQuery) || getOutput(this.query);
+    if (output) {
         this.emitFile(query.output, content);
     }
     return '';
